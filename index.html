@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>CINEMA</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <!-- Jquery -->
+    <script src="js/jquery/jquery-3.6.0.min.js" defer></script>
+
+    <!-- Vueのやつ -->
+    <script src="https://unpkg.com/vue@2.6.14" defer></script>
+    <script src="https://unpkg.com/vue-router@3.0.1" defer></script>
+    <script src="https://unpkg.com/http-vue-loader" defer></script>
+
+    <!-- 起動時必要な処理　Js -->
+    <script src="js/Vue.js" defer></script>
+    <script src="js/common.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palette+Mosaic&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+<!-- 
+    Vueの領域
+    <div id="app">
+      <div id="modal_and_overlay" v-show="showcontent">
+        vshow showcontentの値が0で非表示　1で表示
+        <div id="overlay_closemodal"></div>
+        <div id="modal">
+          <div id="button_closemodal">&times</div>
+          <div id="modal_content"><router-view></router-view></div>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="background">
+
+      <div id="main_contents">
+
+        <header></header>
+
+        <main>
+
+          <div id="title">
+            <div id="menu"><img src="images/menu.png" alt="menu icon"></div>
+            <div id="title_logo">HAL CINEMA</div>
+            <div id="account"><a href="#"><img src="images/icon.png" alt="login icon"></a></div>
+            <div id="cart"><img src="images/search.png" alt="search icon"></div>
+          </div>
+
+          <div id="top">
+            <div id="top_movies">
+              <div class="item">
+                <div class="top_image"><img src="images/eiga1.png" alt="ポスター1"></div>
+              </div>
+              <div class="item">
+                <div class="top_image"><img src="images/eiga2.png" alt="ポスター2"></div>
+              </div>
+              <div class="item">
+                <div class="top_image"><img src="images/eiga3.png" alt="ポスター3"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="wrap">
+
+            <div id="middle_container">
+
+              <div id="left_box_limited">
+
+              </div>
+
+              <div id="right_box_shop">
+                <div id="shop_title"><h2 id="retoro">はるかふぇ</h2><br><p>げんてい メニュー の ごあんない</p></div>
+                <div id="cafe_image"><img src="images/drink.png" alt="カフェ_ポスター"></div>
+              </div>
+
+            </div>
+
+
+            
+          
+            </div>
+          </div>
+        </main>
+
+        <footer>
+
+          Copyright &copy; 2021 All right reseaved.
+
+        </footer>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
